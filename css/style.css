@@ -1,0 +1,159 @@
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.8);
+  font-family: Helvetica,sans-serif;
+}
+#mainSYHOM {
+  margin-left: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+#mainSYHOM:hover{
+  text-decoration: none;
+  color: fuchsia;
+}
+
+#navbarHeader ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+#navbarHeader ul li {
+  float: left;
+}
+#navbarHeader ul li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+
+}
+
+#navbarHeader ul li a:hover {
+  color: fuchsia;
+  text-decoration: none;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+}
+
+.container-two-columns{
+  padding-top: 50px;
+  display: flex;
+}
+
+#work-date-column{
+  width: 25%;
+}
+
+
+
+
+#work-date-column a{
+  color: deeppink;
+  text-decoration: none;
+  border-bottom: 2px solid deeppink;
+  padding-bottom: 5px;
+  font-family: Helvetica,sans-serif;
+  font-size: 15px;
+}
+
+#work-date-column a:hover{
+  color: aqua;
+  text-decoration: none;
+  border-bottom: 5px solid aqua;
+  padding-bottom: 5px;
+  font-family: Helvetica,sans-serif;
+  font-size: 17px;
+}
+
+#paints-column{
+  width: 85%;
+}
+
+
+
+
+
+
+/*laptop size*/
+@media screen and (min-width: 769px) {
+  .paint-file{
+    width: 80%;
+  }
+
+  .paint-too-height{
+    width: 60%;
+  }
+
+  .paint-title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+
+  .paint-title{
+    width: 100%;
+    color: black;
+    font-size: 15px;
+  }
+
+  .paints-row{
+    display: flex;
+    margin-top: 300px;
+  }
+
+}
+
+/*mobile size*/
+@media screen and (max-width: 768px) {
+  .paint-file{
+     width: 50%;
+  }
+
+  .paint-title{
+    font-size: 10px;
+  }
+}
+
+
+
+
+
+
+
+/* contact page*/
+
+.contact-info {
+  font-family: Helvetica,sans-serif;
+  padding-top: 100px;
+}
+
+.contact-info-instagram{
+  display: flex;
+  position: relative;
+}
+
+#contact-info-instagram-link{
+  align-self: center;
+  padding-left: 5px;
+  text-decoration: none;
+}
+
+#contact-info-instagram-link:hover{
+  text-decoration: none;
+  color: fuchsia;
+}
+
