@@ -1,3 +1,4 @@
+
 #header {
   display: flex;
   justify-content: space-between;
@@ -155,5 +156,93 @@
 #contact-info-instagram-link:hover{
   text-decoration: none;
   color: fuchsia;
+
 }
 
+
+/* year image page*/
+.year-images-container{
+  padding-top: 100px;
+}
+
+.year-images-container img{
+  width: 60%;
+  margin: auto;
+}
+
+
+
+.year-images-container-row-0 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.year-image-0-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.back-button-container{
+  position: absolute;
+  left: 0;
+  top:0;
+}
+
+.back-button-container a{
+  text-decoration: none;
+  color: deeppink;
+  font-family: Helvetica,sans-serif;
+  border-bottom: 2px solid deeppink;
+}
+
+
+
+.back-button-container a:hover{
+  text-decoration: none;
+  color: aqua;
+  border-bottom: 5px solid aqua;
+  font-family: Helvetica,sans-serif;
+}
+
+.year-images-container-row-1{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.year-images-container-row-1 img{
+  width: 40%;
+}
+
+.year-images-container-row-2{
+  display:flex;
+  justify-content: space-between;
+
+}
+
+.year-images-container-row-2 img{
+  width: 40%;
+}
+
+.year-images-container-row-2-image-1{
+  padding-right: 2%;
+}
+
+.year-images-container-row-2-image-2{
+  padding-left: 2%;
+}
+
+.year-image-0-info-container{
+  position: relative;
+}
+
+.year-image-0-info-container p{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  white-space: nowrap; /* for laptop only*/
+  font-family: Helvetica, sans-serif;
+}
