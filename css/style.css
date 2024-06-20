@@ -1,248 +1,153 @@
+/*---------------------- IMAGES PAGE ----------------------*/
 
-#header {
+
+/*MAIN CONTAINER*/
+
+.main-container{
+  margin-top: 80px;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+@media screen and (max-width: 600px){
+  .main-container{
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+
+
+/* WORK DATE AND IMAGE CONTAINER*/
+.work-date-and-image-container{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
   width: 100%;
-  backdrop-filter: blur(5px);
-  background-color: rgba(255, 255, 255, 0.8);
-  font-family: Helvetica,sans-serif;
-}
-#mainSYHOM {
-  margin-left: 10px;
-  text-decoration: none;
-  color: black;
-}
-
-#mainSYHOM:hover{
-  text-decoration: none;
-  color: fuchsia;
-}
-
-#navbarHeader ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-#navbarHeader ul li {
-  float: left;
-}
-#navbarHeader ul li a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
 
 }
 
-#navbarHeader ul li a:hover {
-  color: fuchsia;
-  text-decoration: none;
-}
-
-.navbar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  padding: 10px;
-}
-
-.container-two-columns{
-  padding-top: 50px;
-  display: flex;
-}
-
-#work-date-column{
-  width: 25%;
-}
-
-
-
-
-#work-date-column a{
-  color: deeppink;
-  text-decoration: none;
-  border-bottom: 2px solid deeppink;
-  padding-bottom: 5px;
-  font-family: Helvetica,sans-serif;
-  font-size: 15px;
-}
-
-#work-date-column a:hover{
-  color: aqua;
-  text-decoration: none;
-  border-bottom: 5px solid aqua;
-  padding-bottom: 5px;
-  font-family: Helvetica,sans-serif;
-  font-size: 17px;
-}
-
-#paints-column{
-  width: 85%;
-}
-
-
-
-
-
-
-/*laptop size*/
-@media screen and (min-width: 769px) {
-  .paint-file{
-    width: 80%;
-  }
-
-  .paint-too-height{
-    width: 60%;
-  }
-
-  .paint-title-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
-
-
-  .paint-title{
-    width: 100%;
-    color: black;
-    font-size: 15px;
-  }
-
-  .paints-row{
-    display: flex;
-    margin-top: 300px;
-  }
-
-}
-
-/*mobile size*/
-@media screen and (max-width: 768px) {
-  .paint-file{
-     width: 50%;
-  }
-
-  .paint-title{
-    font-size: 10px;
-  }
-}
-
-
-
-
-
-
-
-/* contact page*/
-
-.contact-info {
-  font-family: Helvetica,sans-serif;
-  padding-top: 100px;
-}
-
-.contact-info-instagram{
-  display: flex;
-  position: relative;
-}
-
-#contact-info-instagram-link{
-  align-self: center;
-  padding-left: 5px;
-  text-decoration: none;
-}
-
-#contact-info-instagram-link:hover{
-  text-decoration: none;
-  color: fuchsia;
-
-}
-
-
-/* year image page*/
-.year-images-container{
-  padding-top: 100px;
-}
-
-.year-images-container img{
-  width: 60%;
-  margin: auto;
-}
-
-
-
-.year-images-container-row-0 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
-
-.year-image-0-container {
-  display: flex;
-  justify-content: center;
+.work-date-and-image-container img{
   width: 100%;
 }
 
-.back-button-container{
-  position: absolute;
-  left: 0;
-  top:0;
+.first-image-container{
+  width: 100%;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
-.back-button-container a{
-  text-decoration: none;
-  color: deeppink;
-  font-family: Helvetica,sans-serif;
-  border-bottom: 2px solid deeppink;
+.first-image-container img{
+  width: 100%;
 }
 
 
-
-.back-button-container a:hover{
-  text-decoration: none;
-  color: aqua;
-  border-bottom: 5px solid aqua;
-  font-family: Helvetica,sans-serif;
-}
-
-.year-images-container-row-1{
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.year-images-container-row-1 img{
-  width: 40%;
-}
-
-.year-images-container-row-2{
-  display:flex;
-  justify-content: space-between;
-
-}
-
-.year-images-container-row-2 img{
-  width: 40%;
-}
-
-.year-images-container-row-2-image-1{
-  padding-right: 2%;
-}
-
-.year-images-container-row-2-image-2{
-  padding-left: 2%;
-}
-
-.year-image-0-info-container{
-  position: relative;
-}
-
-.year-image-0-info-container p{
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  white-space: nowrap; /* for laptop only*/
+/*WORK DATE CONTAINER*/
+.work-date-container{
+  font-size: 14px;
   font-family: Helvetica, sans-serif;
+  margin-right: 10px;
+
+}
+
+.work-date-container a{
+  text-decoration: none;
+  color:blue;
+  border-bottom: 2px solid blue;
+}
+
+.work-date-container a:hover{
+  font-size: 14px;
+  color:deeppink;
+  border-bottom: 5px solid deeppink;
+}
+
+
+/*IMAGES CONTAINER*/
+.images-container{
+  width: 100%;
+  margin-top: 10px;
+}
+
+.images-container img{
+  width: 50%;
+}
+
+.image-caption{
+  font-size: 10px;
+  font-family: Helvetica, sans-serif;
+}
+
+.image-with-caption-container{
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 600px) {
+  .image-with-caption-container{
+    display: flex;
+  }
+  .image-caption{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+
+/*---------------------- CONTACT PAGE ----------------------*/
+/*CONTACT INFO CONTAINER*/
+.contact-info-container{
+  margin-top: 80px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/*---------------------- NEWS PAGE ----------------------*/
+.news-container{
+  margin-top: 100px;
+  padding-left: 60px;
+  padding-right: 60px;
+  display: flex;
+  width: 100%;
+}
+
+
+.news-image-container{
+  width: 50%;
+  padding-top: 15px;
+}
+.news-info-container{
+  width: 40%;
+  padding-left: 20px;
+}
+
+.news-image-container img{
+  width: 100%;
+}
+.news-info-title{
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.news-info-description{
+  word-wrap: break-word;
+  text-align: justify;
+}
+
+
+
+
+/*---------------------- IMAGE [....] PAGE ----------------------*/
+.main-images-2024-container{
+  margin-top: 80px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.back-button-with-image-container a{
+  text-decoration: none;
+  color: blue;
+  border-bottom: 2px solid blue;
+}
+
+.back-button-with-image-container a:hover{
+  text-decoration: none;
+  color: deeppink;
+  border-bottom: 5px solid deeppink;
 }
