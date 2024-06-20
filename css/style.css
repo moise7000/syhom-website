@@ -104,16 +104,15 @@
   padding-left: 60px;
   padding-right: 60px;
   display: flex;
-  width: 100%;
 }
 
 
 .news-image-container{
-  width: 50%;
+  width: 100%;
   padding-top: 15px;
 }
 .news-info-container{
-  width: 40%;
+  width: 100%;
   padding-left: 20px;
 }
 
@@ -132,13 +131,23 @@
 
 
 
+@media screen and (max-width: 600px){
+  .news-container{
+    display: block;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .news-info-description{
+    font-size: 13px;
+  }
+
+
+}
+
+
 
 /*---------------------- IMAGE [....] PAGE ----------------------*/
-.main-images-2024-container{
-  margin-top: 80px;
-  padding-left: 60px;
-  padding-right: 60px;
-}
 
 .back-button-with-image-container a{
   text-decoration: none;
@@ -150,4 +159,140 @@
   text-decoration: none;
   color: deeppink;
   border-bottom: 5px solid deeppink;
+}
+
+
+
+
+/*---------------------- IMAGE 2024 PAGE ----------------------*/
+.main-images-2024-container{
+  margin-top: 80px;
+  padding-left: 60px;
+  padding-right: 60px;
+
+}
+
+
+.back-button-with-image-container{
+  width: 100%;
+}
+
+.first-2024-image-container{
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+
+}
+
+.first-2024-image-container img{
+  width: 60%;       /* 80 90 for mobile*/
+}
+
+.image-title{
+  font-weight: bold;
+  font-size: 11px;
+}
+.image-description{
+  font-size: 10px;
+}
+
+.first-2024-image-caption-container{
+  font-family: Helvetica, sans-serif;
+  margin-top: auto;
+  margin-right: 100px;
+
+
+}
+
+
+.second-2024-image-container{
+  width: 100%;
+  display: flex;
+  margin-top: 50px;
+}
+
+
+.second-2024-image-container img{
+  width: 40%; /* 60 70 for mobile*/
+}
+
+.second-2024-image-sub-container{
+  margin-top: 9px;
+}
+
+
+.third-2024-image-container{
+  width: 100%;
+
+
+}
+
+.third-2024-image-sub-container{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+
+}
+
+.third-2024-image-sub-container img{
+  width: 35%;
+}
+
+
+
+
+.fourth-2024-image-container{
+  width: 100%;
+  display: flex;
+}
+
+.fourth-2024-image-container img{
+  width: 80%;
+}
+
+.fourth-2024-image-caption-container{
+  font-family: Helvetica, sans-serif;
+  margin-top: auto;
+  margin-right: 100px;
+  margin-bottom: 20px;
+}
+
+
+.fifth-2024-image-container{
+  width: 100%;
+  margin-top: 100px;
+}
+
+.fifth-2024-image-sub-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.fifth-2024-image-container img{
+  width: 80%;
+}
+
+
+
+.sixth-2024-image-container{
+  width: 100%;
+  display: flex;
+  margin-top: 70px;
+}
+.sixth-2024-image-sub-1-container{
+  width: 100%;
+}
+
+.sixth-2024-image-sub-1-container img{
+  width: 100%;
+}
+
+.sixth-2024-image-sub-2-container{
+  width: 100%;
+}
+
+.sixth-2024-image-sub-2-container img{
+  width: 100%;
 }
