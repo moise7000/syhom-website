@@ -92,6 +92,7 @@
 
     }
   </style>
+  
 </head>
 <body>
 
@@ -111,7 +112,7 @@
 
 
 
-<div class="main-images-2022-container">
+<div class="main-images-2023-container">
   <div class="back-button-with-image-container">
     <a href="./test.html"><span>Back</span></a>
     <div class="first-2024-image-container">
@@ -203,6 +204,8 @@
 
 
 
+</body>
+
 <script>
   function myFunction() {
     var x = document.getElementById("myTopnav");
@@ -219,7 +222,92 @@
     }
 
   }
-</script>
+  
+  
+  // Make it so that if the get parameter ?gallery_view=true is present in the URL, then instead of showing images as they are right now, it shows a slideshow of the images.
+  // The slideshow should have a "next" and "previous" button to navigate between images.
+  // And a "X" button to close the slideshow and go back to the normal view.
 
-</body>
+  if (window.location.search.includes("gallery_view=true")) {
+    // Code for slideshow view
+    var images = [];
+    var imageContainers = document.querySelectorAll(".main-images-2023-container > div");
+
+    for (var i = 0; i < imageContainers.length; i++) {
+      var imageElement = imageContainers[i].querySelector("img");
+      var titleElement = imageContainers[i].querySelector(".image-title");
+      var descriptionElement = imageContainers[i].querySelector(".image-description");
+
+      var image = {
+        path: imageElement ? imageElement.src : "",
+        title: titleElement ? titleElement.textContent : "",
+        description: descriptionElement ? descriptionElement.textContent : ""
+      };
+      images.push(image);
+    }
+
+    // now clear the body
+    document.body.innerHTML = "";
+    
+
+    var currentIndex = 0;
+
+    function showImage(index) {
+      console.log("Showing image at index", index);
+      var slideshowContainer = document.createElement("div");
+      slideshowContainer.classList.add("slideshow-container");
+
+      var imageElement = document.createElement("img");
+      imageElement.src = images[index].path;
+      imageElement.alt = "Slideshow Image";
+      slideshowContainer.appendChild(imageElement);
+
+      var titleElement = document.createElement("p");
+      titleElement.classList.add("image-title");
+      titleElement.textContent = images[index].title;
+      slideshowContainer.appendChild(titleElement);
+
+      var descriptionElement = document.createElement("p");
+      descriptionElement.classList.add("image-description");
+      descriptionElement.textContent = images[index].description;
+      slideshowContainer.appendChild(descriptionElement);
+
+      var prevButton = document.createElement("button");
+      prevButton.innerHTML = "Previous";
+      prevButton.classList.add("slideshow-button", "prev-button");
+      prevButton.addEventListener("click", function() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        showImage(currentIndex);
+      });
+      slideshowContainer.appendChild(prevButton);
+
+      var nextButton = document.createElement("button");
+      nextButton.innerHTML = "Next";
+      nextButton.classList.add("slideshow-button", "next-button");
+      nextButton.addEventListener("click", function() {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage(currentIndex);
+      });
+      slideshowContainer.appendChild(nextButton);
+
+      var closeButton = document.createElement("button");
+      closeButton.innerHTML = "X";
+      closeButton.classList.add("slideshow-button", "close-button");
+      closeButton.addEventListener("click", function() {
+        document.body.removeChild(slideshowContainer);
+      });
+      slideshowContainer.appendChild(closeButton);
+
+      document.body.innerHTML = "";
+      document.body.appendChild(slideshowContainer);
+    }
+
+    showImage(currentIndex);
+  }
+  else {
+    // Code for normal view
+    // Add your normal view implementation here
+  }
+
+</script>
 </html>
