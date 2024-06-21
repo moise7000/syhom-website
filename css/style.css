@@ -89,6 +89,25 @@
   }
 }
 
+.first-image-sub-container{
+  width: 100%;
+}
+
+
+.second-image-container{
+  width: 100%;
+}
+
+.second-image-sub-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.second-image-sub-container img{
+  width: 75%;
+}
 
 /*---------------------- CONTACT PAGE ----------------------*/
 /*CONTACT INFO CONTAINER*/
@@ -145,7 +164,18 @@
 
 }
 
-
+.first-news-image-container{
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: center;
+}
+.first-news-image-container img{
+  width: 30%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
 /*---------------------- IMAGE [....] PAGE ----------------------*/
 
@@ -390,4 +420,123 @@
 
 .fifth-2022-image-sub-container img{
   width: 55%;
+}
+
+
+/*---------------------- IMAGE 2023 PAGE ----------------------*/
+.second-2023-image-container{
+  width: 100%;
+  margin-top: 100px;
+}
+
+.second-2023-image-sub-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.second-2023-image-sub-container img{
+  width: 100%;
+}
+
+
+.third-2023-image-container{
+  width: 100%;
+  display: flex;
+}
+
+.third-2023-image-sub-1-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.third-2023-image-sub-1-container img{
+  width: 50%;
+}
+
+.third-2023-image-sub-2-container{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+ }
+
+.third-2023-image-sub-2-container img{
+  width: 100%;
+}
+
+.third-2023-image-caption-container{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.third-2023-caption-container {
+  align-self: flex-start;
+  margin-bottom: 100px;
+}
+
+.fourth-2023-image-container{
+  width: 100%;
+  display: flex;
+  margin-top: 50px;
+}
+
+.fourth-2023-image-container img{
+  width: 40%; /* 60 70 for mobile*/
+}
+
+.fourth-2023-image-sub-container{
+  margin-top: 9px;
+}
+
+
+.fifth-2023-image-container{
+  width: 100%;
+  margin-top: 100px;
+}
+.fifth-2023-image-sub-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.fifth-2023-image-sub-container img{
+  width: 100%;
+}
+
+
+.sixth-2023-image-container{
+  width: 100%;
+  display: flex;
+  margin-top: 50px;
+}
+
+.sixth-2023-image-caption-container{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.sixth-2023-image-caption-sub-container{
+  align-self: flex-start;
+  margin-bottom: 50px;
+}
+
+.sixth-2023-image-sub-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.sixth-2023-image-sub-container img{
+  width: 75%;
+}
+
+.seventh-2023-image-container{
+  width: 100%;
+  margin-top: 50px;
+}
+.seventh-2023-image-sub-container{
+  display: flex;
+  justify-content: center;
+}
+
+.seventh-2023-image-sub-container img{
+  width: 100%;
 }
