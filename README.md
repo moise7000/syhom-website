@@ -5,6 +5,9 @@
 
 This project, which is close to my heart, is my first website made from scratch. It is simply a portfolio-type site intended to serve as a showcase for a painter.
 
+## The painter
+You can check his work on his [Instagram](https://www.instagram.com/syhommonde/) or [here](https://moise7000.github.io/syhom-website/) ;)
+
 ## How to use ?
 If you want to see the website project in your browser do this : 
 - clone the project (or get the zip file)
