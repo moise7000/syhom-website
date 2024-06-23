@@ -648,6 +648,7 @@
 
 @media screen and (max-width: 600px){
   .third-2023-image-container{
+    margin-top: 100px;
     display: flex;
     flex-direction: column-reverse;
   }
