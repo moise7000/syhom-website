@@ -320,8 +320,11 @@
 
 @media screen and (max-width: 600px){
   .first-2024-image-container{
-    display: block;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column-reverse;
   }
+
 
   .first-2024-image-container img{
     width: 100%;
