@@ -645,3 +645,31 @@
 .seventh-2023-image-sub-container img{
   width: 100%;
 }
+
+@media screen and (max-width: 600px){
+  .third-2023-image-container{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .fourth-2023-image-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .fourth-2023-image-container img{
+    width: 100%;
+  }
+
+  .fourth-2023-image-sub-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sixth-2023-image-container{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .sixth-2023-image-sub-container img{
+    width: 100%;
+  }
+}
