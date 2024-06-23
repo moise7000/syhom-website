@@ -484,6 +484,50 @@
 }
 
 
+@media screen and (max-width: 600px){
+  .second-2022-image-sub-container img{
+    width: 100%;
+  }
+
+  .third-2022-image-container{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .third-2022-image-sub-container{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .third-2022-image-sub-container img{
+    width: 100%;
+  }
+
+  .fourth-2022-image-container{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .fourth-2022-image-sub-container img{
+    width: 100%;
+  }
+
+  .fifth-2022-image-container{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .fifth-2022-image-sub-container{
+    width: 100%;
+  }
+  .fifth-2022-image-sub-container img{
+    width: 100%;
+  }
+
+}
+
+
 /*---------------------- IMAGE 2023 PAGE ----------------------*/
 .second-2023-image-container{
   width: 100%;
