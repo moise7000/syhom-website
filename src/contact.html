@@ -2,9 +2,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K1CPJ996LD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K1CPJ996LD');
+</script>
+  
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./test.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
     body {
@@ -15,9 +25,9 @@
         overflow: hidden;
         backdrop-filter: blur(10px);
         background-color: rgba(255, 255, 255, 0.4);
-        position: fixed; /* Ajout de cette ligne */
-        width: 100%; /* Ajout de cette ligne */
-        top: 0; /* Ajout de cette ligne */
+        position: fixed;
+        width: 100%;
+        top: 0;
         z-index: 10;
 
       }
@@ -55,9 +65,13 @@
       }
 
       @media screen and (max-width: 600px) {
-        .topnav.responsive {position: relative;}
+        .topnav.responsive {
+          position: fixed;
+          backdrop-filter: blur(10px);
+          background-color: rgba(255, 255, 255, 0.8);
+        }
         .topnav.responsive .icon {
-          position: absolute;
+          position: fixed;
           right: 0;
           top: 0;
         }
@@ -104,7 +118,7 @@
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
-  <a href="./news.html"><span>News</span></a>
+  <a href="./index.html"><span>News</span></a>
   <a href="./contact.html"><span>Contact</span></a>
   <a href="./test.html"><span>Images</span></a>
 </div>
@@ -114,11 +128,11 @@
 <div class="contact-info-container">
 
   <div class="contact-info-email">
-    <p>------------------- Email : syhommonde@gmail.com</p>
+    <p>---- Email : syhommonde@gmail.com</p>
   </div>
 
   <div class="contact-info-instagram">
-    <p>------- Instagram :</p>
+    <p>-- Instagram :</p>
     <a id="contact-info-instagram-link" href="https://www.instagram.com/syhommonde/">@syhommonde</a>
   </div>
 
