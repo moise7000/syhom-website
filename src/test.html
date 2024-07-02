@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K1CPJ996LD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K1CPJ996LD');
+</script>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./test.css">
+  
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
     body {
@@ -55,12 +66,16 @@
     }
 
     @media screen and (max-width: 600px) {
-      .topnav.responsive {position: relative;}
-      .topnav.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
+      .topnav.responsive {
+          position: fixed;
+          backdrop-filter: blur(10px);
+          background-color: rgba(255, 255, 255, 0.8);
+        }
+        .topnav.responsive .icon {
+          position: fixed;
+          right: 0;
+          top: 0;
+        }
       .topnav.responsive a {
         float: none;
         display: block;
@@ -99,9 +114,9 @@
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
-  <a href="./news.html"><span>News</span></a>
+  <a href="./index.html"><span>News</span></a>
   <a href="./contact.html"><span>Contact</span></a>
-  <a href="./images.html"><span>Images</span></a>
+  <a href="./test.html"><span>Images</span></a>
 </div>
 <div class="main-container">
   <div class="work-date-and-image-container">
